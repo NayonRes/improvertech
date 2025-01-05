@@ -243,7 +243,7 @@ export default function Home() {
               mb: 2,
             }}
           >
-            Your <b>one-stop digital</b> shop
+            Your all-in-one digital solution hub
           </Typography>
 
           <Typography
@@ -258,9 +258,10 @@ export default function Home() {
               margin: "auto",
             }}
           >
-            Planning and designing your tech solution is just the beginning.
-            With our full-scale design and development services, we stay by your
-            side till you reach your digital goals and beyond
+            From planning and design to execution, we’re with you at every
+            stage. Our comprehensive design and development services ensure your
+            tech solutions not only meet your digital goals but also drive
+            continuous growth and success
           </Typography>
 
           <img
@@ -300,12 +301,15 @@ export default function Home() {
                     {/* {item?.projectSize}sqf {item?.type} | {item?.location} */}
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Embracing a mobile-first philosophy, we specialize in
+                    crafting cutting-edge mobile applications that redefine user
+                    experiences across platforms. From concept to deployment,
+                    our innovative solutions are designed to elevate your
+                    business, ensuring seamless engagement and expanding your
+                    reach in today's mobile-centric world.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -323,7 +327,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -343,12 +347,14 @@ export default function Home() {
                     DevOps Service
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Our DevOps services are designed to harmonize collaboration
+                    between development and operations teams, streamlining
+                    software delivery and deployment. By fostering seamless
+                    workflows, we empower your organization to achieve faster,
+                    more efficient, and reliable results.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -366,7 +372,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -386,12 +392,15 @@ export default function Home() {
                     Web Application Development
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Transform your digital presence with stunning,
+                    high-performance, and secure web apps designed to captivate
+                    your clients, foster loyalty, and unlock new revenue
+                    streams. Enjoy a seamless and consistent UI experience
+                    across all platforms, tailored to elevate your brand and
+                    deliver results.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -409,7 +418,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -429,12 +438,15 @@ export default function Home() {
                     Mobile Application Development
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Guided by a mobile-first philosophy, we bring your ideas to
+                    life with cutting-edge mobile applications designed for
+                    performance and elegance across all platforms. Our mission
+                    is to create seamless, engaging user experiences that
+                    amplify your brand’s presence and unlock limitless potential
+                    in today’s mobile-driven landscape.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -452,7 +464,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -472,12 +484,15 @@ export default function Home() {
                     UI/UX Design
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Our team of creative UI/UX designers transforms ideas into
+                    visually captivating, user-first interfaces that leave a
+                    lasting impression. By seamlessly blending beauty and
+                    functionality, we craft experiences that not only delight
+                    users but also inspire engagement, driving adoption and
+                    creating unforgettable digital journeys.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -495,7 +510,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -515,12 +530,14 @@ export default function Home() {
                     ⁠Product Design
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    We integrate cutting-edge technologies like Cloud, AI, Web
+                    Analytics, Cognitive Computing, and Machine Learning into
+                    every phase of our software product engineering services.
+                    This ensures innovative, future-ready solutions that drive
+                    efficiency, scalability, and exceptional performance.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -538,7 +555,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -558,12 +575,14 @@ export default function Home() {
                     Cloud Solution
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Quality and reliability are the foundation of our software
+                    solutions. Our expert QA team employs meticulous testing
+                    methodologies to identify and resolve issues, guaranteeing
+                    the delivery of resilient, flawless applications that exceed
+                    expectations.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -581,7 +600,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -598,15 +617,17 @@ export default function Home() {
                     variant="h6"
                     sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
                   >
-                    Quality Assurance
+                    Software Testing as Service
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    Quality and reliability are the foundation of our software
+                    solutions. Our expert QA team employs meticulous testing
+                    methodologies to identify and resolve issues, guaranteeing
+                    the delivery of resilient, flawless applications that exceed
+                    expectations.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -624,7 +645,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
             <Box className="three_part_card">
@@ -644,9 +665,9 @@ export default function Home() {
                     eCommerce Development
                   </Typography>
                   <Typography variant="medium" color="text.light">
-                    Your first step towards a successful business venture,
-                    together we carefully craft a plan and evaluate the project
-                    success, eliminating the possible hindrances along the way
+                    We build custom eCommerce solutions that are scalable,
+                    secure, and user-friendly, ensuring seamless experiences and
+                    growth for your platform.
                   </Typography>
                 </Grid>
                 <Grid>
@@ -706,8 +727,8 @@ export default function Home() {
               mb: 2,
             }}
           >
-            Getweb <b>shapes & gives life</b> to
-            <br /> your digital ideas!
+            ImproverTech brings your digital ideas to life,
+            <br /> shaping them into innovative and impactful solutions!
           </Typography>
 
           <Typography
@@ -778,12 +799,14 @@ export default function Home() {
                     },
                   }}
                 >
-                  Diverse IT team
+                  Skilled IT Professionals
                 </Typography>
               </Box>
               <Typography variant="medium" color="text.light">
-                We house battle-tested product engineers, web & app designer &
-                developers, business analysts, and all kinds of resources
+                Our team consists of seasoned product engineers, creative web
+                and app designers and developers, insightful business analysts,
+                and a wide array of specialists, all committed to driving
+                success and innovation for your projects
               </Typography>
             </Box>
 
@@ -820,12 +843,13 @@ export default function Home() {
                     },
                   }}
                 >
-                  Customer-first strategy
+                  Customer-Driven Philosophy
                 </Typography>
               </Box>
               <Typography variant="medium" color="text.light">
-                We do what we do for our esteemed clients and partners, and we
-                believe your success ultimately leads to our own success
+                We are driven by a commitment to our valued clients and
+                partners, believing that your success is the key to our own.
+                Together, we create pathways to mutual growth and achievement
               </Typography>
             </Box>
             <Box className="four_part_card">
@@ -861,12 +885,13 @@ export default function Home() {
                     },
                   }}
                 >
-                  Transparency at its finest
+                  Transparency in Action
                 </Typography>
               </Box>
               <Typography variant="medium" color="text.light">
-                Every approach we make towards your project is clearly defined,
-                planned, and shared with you for effective communication
+                Every step we take in your project is meticulously defined,
+                carefully planned, and transparently shared with you, ensuring
+                seamless and effective communication throughout the process
               </Typography>
             </Box>
             <Box className="four_part_card">
@@ -902,12 +927,13 @@ export default function Home() {
                     },
                   }}
                 >
-                  Client satisfaction
+                  Customer Contentment
                 </Typography>
               </Box>
               <Typography variant="medium" color="text.light">
-                Our clients are the lifeblood of our professional existence, and
-                we’ve built our reputation walking the extra mile when necessary
+                Our clients are the heart of our success, and we’ve earned our
+                reputation by consistently going above and beyond to meet their
+                needs and exceed expectations
               </Typography>
             </Box>
           </Box>
