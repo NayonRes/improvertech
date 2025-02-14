@@ -24,6 +24,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import EastIcon from "@mui/icons-material/East";
 import ClientSilder from "./components/ClientSilder";
+import ProjectsSlider from "./components/ProjectsSlider";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
@@ -1146,7 +1147,7 @@ export default function Home() {
             <Grid item xs={4} sm={4} md={3} lg={2} className="tech_logos">
               <img
                 loading="lazy"
-                src="/Healthcare.svg"
+                src="/Food-Restaurants.svg"
                 alt=""
                 style={{ display: "block", margin: "auto", transition: ".2s" }}
                 className="zoom_effect_icon"
@@ -2448,7 +2449,7 @@ export default function Home() {
             container
             alignItems="center"
             className="tech_card"
-            sx={{ borderLeft: "5px solid #7879f1", mt: 3 }}
+            sx={{ borderLeft: "5px solid #f178de", mt: 3 }}
           >
             <Grid
               item
@@ -2621,6 +2622,71 @@ export default function Home() {
               mb: 2,
             }}
           >
+            Portfolio
+          </Typography>
+          <Typography
+            variant="h3"
+            color="text.main"
+            sx={{
+              textAlign: "center",
+              color: "#fff",
+              mb: 2,
+            }}
+          >
+            Some <b>projects</b> we’ve done
+          </Typography>
+
+          <Typography
+            variant="base"
+            color="text.light"
+            sx={{
+              textAlign: "center",
+              fontWeight: 400,
+              mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
+              px: { xs: 4, sm: 0 },
+              maxWidth: "70%",
+              margin: "auto",
+            }}
+          >
+            We believe in providing transparent process that we follow for
+            exponential results and building stronger bonds with our clients
+          </Typography>
+
+          <img
+            loading="lazy"
+            src="/line.svg"
+            style={{ margin: "auto", display: "block" }}
+          />
+        </Container>
+        <Box sx={{ mt: 8, maxWidth: "1920px", px: 12 }}>
+          <ProjectsSlider />
+        </Box>
+      </Box>
+      <Box
+        id="services"
+        sx={{ background: theme.palette.background.default, py: 7 }}
+      >
+        <Container
+          maxWidth="xl"
+          sx={{
+            px: {
+              xs: 3,
+              sm: 12,
+              md: 16,
+              lg: 20,
+              xl: 3,
+            },
+          }}
+        >
+          <Typography
+            variant="small"
+            color="primary.main"
+            sx={{
+              textAlign: "center",
+              fontWeight: 600,
+              mb: 2,
+            }}
+          >
             Client stories
           </Typography>
           <Typography
@@ -2658,7 +2724,7 @@ export default function Home() {
             style={{ margin: "auto", display: "block" }}
           />
         </Container>
-        <Box sx={{ mt: 3, maxWidth: "1920px", px: 12 }}>
+        <Box sx={{ mt: 8, maxWidth: "1920px", px: 12 }}>
           <ClientSilder />
         </Box>
       </Box>

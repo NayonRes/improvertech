@@ -54,13 +54,13 @@ const MyLayout = ({ children }) => {
     return () => window.removeEventListener("load", handleLoad);
   }, []);
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }
+    // if (typeof window !== "undefined") {
+    //   window.scrollTo({
+    //     top: 0,
+    //     left: 0,
+    //     behavior: "smooth",
+    //   });
+    // }
   }, []);
   return (
     <div>
