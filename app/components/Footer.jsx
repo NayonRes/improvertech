@@ -124,7 +124,7 @@ const Footer = () => {
               }}
             >
               <Link href="/">
-                <img src="/Logo.png" alt="chitron logo" width="60px" />
+                <img src="/Logo.png" alt="improver tech logo" width="60px" />
               </Link>
             </Box>
 

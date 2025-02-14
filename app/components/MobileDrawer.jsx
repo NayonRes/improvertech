@@ -79,7 +79,7 @@ const MobileDrawer = () => {
       >
         <div style={{ position: "relative", padding: "3px 15px 0px" }}>
           <Link href="/">
-            <img src="/Logo.svg" alt="chitron logo" style={{ width: "30px" }} />
+            <img src="/Logo.svg" alt="improver tech logo" style={{ width: "30px" }} />
           </Link>
           <IconButton
             id="closeButton"
