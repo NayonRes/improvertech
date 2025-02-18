@@ -14,6 +14,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import Link from "next/link";
 import EastIcon from "@mui/icons-material/East";
+import PersonIcon from "@mui/icons-material/Person";
 
 const Footer = () => {
   const theme = useTheme();
@@ -52,7 +53,12 @@ const Footer = () => {
               // component={Link}
               // href="/"
             >
-              info@test.com
+              <a
+                href="mailto:info.improvertech.com"
+                style={{ textDecoration: "none", color: "#00ffa3" }}
+              >
+                info.improvertech.com{" "}
+              </a>
             </Typography>
           </Grid>
           <Grid item md={4}>
@@ -75,7 +81,12 @@ const Footer = () => {
               // component={Link}
               // href="/"
             >
-              careers@test.com
+              <a
+                href="mailto:info.improvertech.com"
+                style={{ textDecoration: "none", color: "#00ffa3" }}
+              >
+                info.improvertech.com{" "}
+              </a>
             </Typography>
           </Grid>
           <Grid item md={4}>
@@ -105,7 +116,7 @@ const Footer = () => {
             </Button>
           </Grid>
         </Grid>
-        <Divider sx={{ mb: 6,opacity:.2 }}/>
+        <Divider sx={{ mb: 6, opacity: 0.2 }} />
         <Grid container spacing={{ xs: 4, sm: 4, md: 0 }}>
           <Grid item md={4}>
             <Box
@@ -129,8 +140,8 @@ const Footer = () => {
             </Box>
 
             <Typography variant="base" sx={{ my: 3.5, color: "#F6F6F6" }}>
-              We provides a full range of <br />
-              interior design, architectural design.
+              Eta edit kore dao: Empowering innovation <br />
+              through software excellence.
             </Typography>
 
             <Box>
@@ -196,7 +207,7 @@ const Footer = () => {
               </a>
             </Box>
           </Grid>
-          <Grid item md={4}>
+          {/* <Grid item md={4}>
             <Typography
               variant="base"
               sx={{
@@ -278,7 +289,7 @@ const Footer = () => {
                 Contact
               </Typography>
             </Grid>
-          </Grid>
+          </Grid> */}
           <Grid item md={4}>
             <Typography
               variant="base"
@@ -288,8 +299,21 @@ const Footer = () => {
                 mb: { xs: 3, sm: 3, md: 6 },
               }}
             >
-              Contacts
+              USA office
             </Typography>
+            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+              <Grid item xs="auto" sx={{ pr: 3 }}>
+                <PersonIcon sx={{ color: "#F6F6F6" }} />
+              </Grid>
+              <Grid item xs="auto">
+                <Typography
+                  variant="medium"
+                  sx={{ color: "#F6F6F6", fontWeight: 500 }}
+                >
+                  Shihabur Rahman
+                </Typography>
+              </Grid>
+            </Grid>
             <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
@@ -312,12 +336,13 @@ const Footer = () => {
                   variant="medium"
                   sx={{ color: "#F6F6F6", fontWeight: 500 }}
                 >
-                  Shornomoye, Level:A/1 House: 46/A, <br />
-                  Road: 11/A, Dhanmondi,, Dhaka, Bangladesh
+                  412 winspear Avenue,city buffalo
+                  <br />
+                  New York City
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
                   width="20"
@@ -345,7 +370,7 @@ const Footer = () => {
                   </a>
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid> */}
             <Grid container alignItems="center">
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
@@ -366,8 +391,115 @@ const Footer = () => {
                   variant="medium"
                   sx={{ color: "#F6F6F6", fontWeight: 500 }}
                 >
-                  <a className="no_link_design" href="tel:+8801810023501">
-                    018 10 02 35 01
+                  <a className="no_link_design" href="tel:+17169512616">
+                    +1 71 69 51 26 16
+                  </a>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item md={4}>
+            <Typography
+              variant="base"
+              sx={{
+                color: "#F6F6F6",
+                fontWeight: 500,
+                mb: { xs: 3, sm: 3, md: 6 },
+              }}
+            >
+              Bangladesh office
+            </Typography>
+            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+              <Grid item xs="auto" sx={{ pr: 3 }}>
+                <PersonIcon sx={{ color: "#F6F6F6" }} />
+              </Grid>
+              <Grid item xs="auto">
+                <Typography
+                  variant="medium"
+                  sx={{ color: "#F6F6F6", fontWeight: 500 }}
+                >
+                  Jamil Hasnine
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+              <Grid item xs="auto" sx={{ pr: 3 }}>
+                <svg
+                  width="20"
+                  height="25"
+                  viewBox="0 0 20 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.0775 24.6601C9.0775 24.6601 0 17.1692 0 9.7984C0 7.1997 1.05357 4.70744 2.92893 2.86988C4.8043 1.03233 7.34784 0 10 0C12.6522 0 15.1957 1.03233 17.0711 2.86988C18.9464 4.70744 20 7.1997 20 9.7984C20 17.1692 10.9225 24.6601 10.9225 24.6601C10.4175 25.1157 9.58625 25.1108 9.0775 24.6601ZM10 14.0852C10.5745 14.0852 11.1434 13.9743 11.6742 13.7589C12.205 13.5435 12.6873 13.2277 13.0936 12.8296C13.4998 12.4316 13.8221 11.959 14.042 11.4389C14.2618 10.9188 14.375 10.3613 14.375 9.7984C14.375 9.23545 14.2618 8.67801 14.042 8.15791C13.8221 7.63781 13.4998 7.16524 13.0936 6.76717C12.6873 6.36911 12.205 6.05334 11.6742 5.83791C11.1434 5.62248 10.5745 5.5116 10 5.5116C8.83968 5.5116 7.72688 5.96324 6.90641 6.76717C6.08594 7.5711 5.625 8.66147 5.625 9.7984C5.625 10.9353 6.08594 12.0257 6.90641 12.8296C7.72688 13.6336 8.83968 14.0852 10 14.0852Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </Grid>
+              <Grid item xs="auto">
+                <Typography
+                  variant="medium"
+                  sx={{ color: "#F6F6F6", fontWeight: 500 }}
+                >
+                  66/3 barabag, mirpur 2, <br />
+                  Dhaka, Bangladesh
+                </Typography>
+              </Grid>
+            </Grid>
+            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+              <Grid item xs="auto" sx={{ pr: 3 }}>
+                <svg
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.33333 0.5C2.44928 0.5 1.60143 0.858213 0.976311 1.49584C0.351189 2.13346 0 2.99826 0 3.9V4.2417L10 9.7344L20 4.2434V3.9C20 2.99826 19.6488 2.13346 19.0237 1.49584C18.3986 0.858213 17.5507 0.5 16.6667 0.5H3.33333ZM20 6.1729L10.395 11.448C10.2736 11.5147 10.1379 11.5496 10 11.5496C9.86212 11.5496 9.7264 11.5147 9.605 11.448L0 6.1729V14.1C0 15.0017 0.351189 15.8665 0.976311 16.5042C1.60143 17.1418 2.44928 17.5 3.33333 17.5H16.6667C17.5507 17.5 18.3986 17.1418 19.0237 16.5042C19.6488 15.8665 20 15.0017 20 14.1V6.1729Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </Grid>
+              <Grid item xs="auto">
+                <Typography
+                  variant="medium"
+                  sx={{ color: "#F6F6F6", fontWeight: 500 }}
+                >
+                  <a
+                    className="no_link_design"
+                    href="mailto:chitroninterior@gmail.com"
+                  >
+                    chitroninterior@gmail.com
+                  </a>
+                </Typography>
+              </Grid>
+            </Grid> */}
+            <Grid container alignItems="center">
+              <Grid item xs="auto" sx={{ pr: 3 }}>
+                <svg
+                  width="19"
+                  height="23"
+                  viewBox="0 0 19 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.20536 0.982696L4.66698 0.604292C6.03495 0.250088 7.49793 0.823195 8.0842 1.94301L9.25133 4.17383C9.76025 5.14515 9.47796 6.28806 8.55377 6.99867L5.98474 8.97649C6.14307 10.1601 6.63344 11.325 7.45586 12.4712C8.23793 13.5799 9.28585 14.5505 10.5379 15.3258L13.6267 14.4898C14.7965 14.1741 16.0709 14.5382 16.7888 15.3929L18.4607 17.3839C19.2967 18.3783 19.1461 19.7489 18.1106 20.5915L17.0005 21.4946C15.8958 22.3933 14.3188 22.7201 12.8585 22.3504C9.41327 21.4792 6.24531 18.8931 3.35464 14.5921C0.460359 10.2837 -0.5611 6.6287 0.290267 3.62713C0.648546 2.36431 1.75867 1.3578 3.20807 0.982696"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </Grid>
+              <Grid item xs="auto">
+                <Typography
+                  variant="medium"
+                  sx={{ color: "#F6F6F6", fontWeight: 500 }}
+                >
+                  <a className="no_link_design" href="tel:+8801913968201 ">
+                    +880 19 13 96 82 01
                   </a>
                 </Typography>
               </Grid>

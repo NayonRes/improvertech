@@ -1,9 +1,9 @@
 "use client";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 import ColorPalette from "../color-palette/ColorPalette";
 
-const inter = Inter({
+const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
@@ -68,13 +68,13 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: inter.style.fontFamily,
+    fontFamily: poppins.style.fontFamily,
 
     h1: {
       fontSize: "7.875rem", //126px
       lineHeight: "10.5rem", // 168px
       fontWeight: 700,
-      fontFamily: '"Inter", serif',
+      // fontFamily: '"Poppins", serif',
       display: "block",
       // [createTheme().breakpoints.down("xl")]: {
       //   fontSize: "100px", // Adjust for medium screens
@@ -96,7 +96,7 @@ const theme = createTheme({
       fontSize: "3.75rem", //60px
       lineHeight: "4.25rem", // 68px
       // fontWeight: 700,
-      fontFamily: '"Inter", serif', // alternative of  Times New Roman
+      // fontFamily: '"Poppins", serif', // alternative of  Times New Roman
       display: "block",
 
       [createTheme().breakpoints.down("xl")]: {
@@ -118,7 +118,7 @@ const theme = createTheme({
       fontSize: "2.625rem", //42px
       lineHeight: "3rem", // 48px
       // fontWeight: 700,
-      fontFamily: '"Inter", serif', // alternative of  Times New Roman
+      // fontFamily: '"Poppins", serif',
       display: "block",
 
       [createTheme().breakpoints.down("xl")]: {
@@ -142,7 +142,7 @@ const theme = createTheme({
       lineHeight: "1.75rem", // 28px
       // fontWeight: 700,
       display: "block",
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
       [createTheme().breakpoints.down("xl")]: {
         fontSize: "1.5rem", // Adjust for medium screens
       },
@@ -161,7 +161,7 @@ const theme = createTheme({
       lineHeight: "2.25rem", // 52px
       // fontWeight: 700,
       display: "block",
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
       [createTheme().breakpoints.down("xl")]: {
         fontSize: "1.125rem", // Adjust for medium screens
         lineHeight: "2rem", // 32px
@@ -184,14 +184,14 @@ const theme = createTheme({
       //   lineHeight: "3.25rem", // 52px
       //   fontWeight: 700,
       display: "block",
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
     },
     base: {
       fontSize: "1.125rem", //18px
       lineHeight: "1.75rem", // 34px
       display: "block",
       fontWeight: 400,
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
       [createTheme().breakpoints.down("md")]: {
         fontSize: "1rem", // Adjust for medium screens
       },
@@ -205,7 +205,7 @@ const theme = createTheme({
       lineHeight: "1.75rem", // 28px
       display: "block",
       fontWeight: 400,
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
       [createTheme().breakpoints.down("md")]: {
         fontSize: "0.875rem", // Adjust for medium screens
       },
@@ -218,7 +218,7 @@ const theme = createTheme({
       lineHeight: "1.125rem", // 18px
       display: "block",
       fontWeight: 400,
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
       [createTheme().breakpoints.down("md")]: {
         fontSize: "0.75rem", // Adjust for medium screens
       },
@@ -231,7 +231,7 @@ const theme = createTheme({
       lineHeight: "1rem", // 16px
       display: "block",
       fontWeight: 400,
-      fontFamily: '"Montserrat", serif',
+      // fontFamily: '"Poppins", serif',
     },
   },
   components: {
@@ -256,7 +256,7 @@ const theme = createTheme({
           borderRadius: "100vw",
           textTransform: "none",
           fontWeight: 700,
-          fontFamily: '"Montserrat", serif',
+          // fontFamily: '"Poppins", serif',
 
           [createTheme().breakpoints.down("sm")]: {
             "& .MuiButton-endIcon": {

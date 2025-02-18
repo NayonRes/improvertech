@@ -17,7 +17,7 @@ const Header = () => {
   const buttonStyle = {
     textTransform: "none",
     fontSize: "16px",
-    fontFamily: '"Montserrat", serif',
+    // fontFamily: '"Poppins", serif',
     px: 1.5,
     mx: 0.5,
     color: "#8D8F98",
@@ -113,7 +113,7 @@ const Header = () => {
               },
             }}
           >
-            <Button
+            {/* <Button
               disableRipple
               sx={{
                 ...buttonStyle,
@@ -189,7 +189,7 @@ const Header = () => {
               href="/contacts"
             >
               Contact
-            </Button>
+            </Button> */}
 
             {/* <Button
               disableRipple
@@ -244,7 +244,7 @@ const Header = () => {
             variant="contained"
             color="secondary"
             disableElevation
-            onClick={() => setOpen(true)}
+            // onClick={() => setOpen(true)}
             sx={{
               ml: 2,
               px: 4,

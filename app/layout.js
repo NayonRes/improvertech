@@ -1,4 +1,4 @@
-import { Playfair_Display, Tinos, Montserrat } from "next/font/google";
+import { Playfair_Display, Tinos, Poppins } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
@@ -8,7 +8,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import theme from "./theme/theme";
 import MyLayout from "./MyLayout";
 
-const montserrat = Montserrat({
+const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -28,7 +28,7 @@ const tinos = Tinos({
 });
 
 // font-family: "Playfair Display", serif;
-// font-family: "Montserrat", serif; alternative of  Helvetica Neue
+// font-family: "Poppins", serif; alternative of  Helvetica Neue
 // font-family: "Tinos", serif; alternative of  Times New Roman
 
 export const metadata = {
@@ -40,9 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className} ${playfair_display.className} ${tinos.className}`}
-      >
+      <body className={`${poppins.className}`}>
         <AppRouterCacheProvider options={{ key: "css" }}>
           <ThemeProvider theme={theme}>
             <MyLayout>{children}</MyLayout>

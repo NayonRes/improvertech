@@ -85,7 +85,7 @@ export default function Home() {
     lineHeight: "1.75rem", // 28px
     fontWeight: 700,
     display: "block",
-    fontFamily: '"Montserrat", serif',
+    fontFamily: '"Poppins", serif',
     [theme.breakpoints.down("xl")]: {
       fontSize: "1.5rem", // Adjust for medium screens
     },
@@ -105,7 +105,7 @@ export default function Home() {
     lineHeight: "1.5rem", // 28px
     fontWeight: 400,
     display: "block",
-    fontFamily: '"Montserrat", serif',
+    fontFamily: '"Poppins", serif',
     [theme.breakpoints.down("xl")]: {
       fontSize: "1.125rem", // Adjust for medium screens
     },
@@ -174,7 +174,7 @@ export default function Home() {
               <b>Software Excellence</b>
             </Typography>
             <Typography
-              variant="base"
+              variant="medium"
               color="text.light"
               sx={{
                 textAlign: "center",
@@ -225,7 +225,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -248,7 +248,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -295,8 +295,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     Custom Software Development
                     {/* {item?.projectSize}sqf {item?.type} | {item?.location} */}
@@ -342,8 +343,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     DevOps Service
                   </Typography>
@@ -387,8 +389,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     Web Application Development
                   </Typography>
@@ -433,8 +436,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     Mobile Application Development
                   </Typography>
@@ -479,8 +483,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     UI/UX Design
                   </Typography>
@@ -525,8 +530,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     ⁠Product Design
                   </Typography>
@@ -570,8 +576,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     Cloud Solution
                   </Typography>
@@ -615,8 +622,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     Software Testing as Service
                   </Typography>
@@ -660,8 +668,9 @@ export default function Home() {
                   <img loading="lazy" src="/test.svg" alt="" width="50px" />
 
                   <Typography
-                    variant="h6"
-                    sx={{ color: "#fff", mt: 3, mb: 1, transition: "0.5s" }}
+                    className="card_title"
+                    variant="base"
+                    sx={{ color: "#fff", mt: 3, mb: 2, transition: "0.5s" }}
                   >
                     eCommerce Development
                   </Typography>
@@ -671,7 +680,7 @@ export default function Home() {
                     growth for your platform.
                   </Typography>
                 </Grid>
-                <Grid>
+                {/* <Grid>
                   <Typography
                     variant="small"
                     color="text.light"
@@ -679,7 +688,7 @@ export default function Home() {
                     component={Link}
                     href="#"
                   >
-                    View eCommerce Development{" "}
+                    View eCommerce Development{" "}
                     <ArrowForwardIosRoundedIcon
                       sx={{
                         fontSize: "16px",
@@ -689,7 +698,7 @@ export default function Home() {
                       }}
                     />
                   </Typography>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Box>
           </Box>
@@ -709,7 +718,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -733,7 +742,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -783,7 +792,7 @@ export default function Home() {
               </Typography>
               <Box sx={{ position: "relative" }}>
                 <Typography
-                  variant="base"
+                  variant="medium"
                   sx={{
                     color: "#fff",
 
@@ -827,7 +836,7 @@ export default function Home() {
               </Typography>
               <Box sx={{ position: "relative" }}>
                 <Typography
-                  variant="base"
+                  variant="medium"
                   sx={{
                     color: "#fff",
 
@@ -869,7 +878,7 @@ export default function Home() {
               </Typography>
               <Box sx={{ position: "relative" }}>
                 <Typography
-                  variant="base"
+                  variant="medium"
                   sx={{
                     color: "#fff",
 
@@ -911,7 +920,7 @@ export default function Home() {
               </Typography>
               <Box sx={{ position: "relative" }}>
                 <Typography
-                  variant="base"
+                  variant="medium"
                   sx={{
                     color: "#fff",
 
@@ -958,7 +967,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -981,7 +990,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -1262,7 +1271,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -1289,7 +1298,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -1326,7 +1335,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -1534,7 +1543,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -1802,7 +1811,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -2071,7 +2080,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -2310,7 +2319,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -2460,7 +2469,7 @@ export default function Home() {
               sx={{ borderRight: "2px solid rgba(76, 77, 84, 0.2)" }}
             >
               <Typography
-                variant="base"
+                variant="medium"
                 color="#fff"
                 sx={{
                   fontWeight: 400,
@@ -2614,7 +2623,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -2637,7 +2646,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -2662,8 +2671,8 @@ export default function Home() {
           <ProjectsSlider />
         </Box>
       </Box>
-      <Box
-        id="services"
+      {/* <Box
+        id="client-stories"
         sx={{ background: theme.palette.background.default, py: 7 }}
       >
         <Container
@@ -2679,7 +2688,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="small"
+            variant="medium"
             color="primary.main"
             sx={{
               textAlign: "center",
@@ -2702,7 +2711,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            variant="base"
+            variant="medium"
             color="text.light"
             sx={{
               textAlign: "center",
@@ -2727,7 +2736,7 @@ export default function Home() {
         <Box sx={{ mt: 8, maxWidth: "1920px", px: 12 }}>
           <ClientSilder />
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 }

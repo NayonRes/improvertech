@@ -176,7 +176,9 @@ const ContactDrawer = () => {
             <Typography
               sx={{ color: "#fff", fontWeight: 500, fontSize: "20px" }}
             >
-              +11 123456789
+              <a className="no_link_design" href="tel:+17169512616">
+                +1 71 69 51 26 16
+              </a>
             </Typography>
           </Grid>
         </Grid>
@@ -302,7 +304,13 @@ const ContactDrawer = () => {
             <Typography
               sx={{ color: "#fff", fontWeight: 500, fontSize: "20px" }}
             >
-              +11 123456789
+              <a
+                className="no_link_design"
+                href="https://wa.me/+17169512616"
+                target="_blank"
+              >
+                +1 71 69 51 26 16
+              </a>
             </Typography>
           </Grid>
         </Grid>
@@ -414,7 +422,7 @@ const ContactDrawer = () => {
           }}
         ></Box>
 
-        <Box
+        {/* <Box
           sx={{
             mb: 2,
             cursor: "pointer",
@@ -718,7 +726,7 @@ const ContactDrawer = () => {
               </Typography>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
       </List>
     </Box>
   );

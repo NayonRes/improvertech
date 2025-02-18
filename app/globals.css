@@ -110,7 +110,7 @@ body {
 .three_part_card:hover svg {
   right: -7px;
 }
-.three_part_card:hover h6,
+.three_part_card:hover .card_title,
 .three_part_card:hover a {
   color: #00ffa3;
 }

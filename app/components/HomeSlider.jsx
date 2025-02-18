@@ -99,78 +99,42 @@ const HomeSlider = () => {
             height={650}
             layout="responsive"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            alt="chitron design"
+            alt=" "
           /> */}
-          <img loading="lazy" src="/slider-images/7.webp" alt="chitron design" />
+          <img loading="lazy" src="/slider-images/7.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img loading="lazy" src="/slider-images/8.webp" alt="chitron design" />
+          <img loading="lazy" src="/slider-images/8.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img loading="lazy" src="/slider-images/9.webp" alt="chitron design" />
+          <img loading="lazy" src="/slider-images/9.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/10.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/10.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/11.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/11.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/12.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/12.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/13.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/13.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/14.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/14.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/15.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/15.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/16.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/16.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/17.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/17.webp" alt=" " />
         </Box>
         <Box className="image_contrainer">
-          <img
-            loading="lazy"
-            src="/slider-images/18.webp"
-            alt="chitron design"
-          />
+          <img loading="lazy" src="/slider-images/18.webp" alt=" " />
         </Box>
       </Slider>
     </Box>
