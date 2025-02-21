@@ -138,7 +138,7 @@ export default function Home() {
         <HomeSlider />
  
       </Box> */}
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" id="home" component="section">
         <Grid
           container
           alignItems="center"
@@ -209,6 +209,7 @@ export default function Home() {
         </Grid>
       </Container>
       <Box
+        component="section"
         id="services"
         sx={{ background: theme.palette.background.default, py: 7 }}
       >
@@ -704,7 +705,7 @@ export default function Home() {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ py: 7 }}>
+      <Box sx={{ py: 7 }} id="about" component="section">
         <Container
           maxWidth="lg"
           sx={{
@@ -951,7 +952,7 @@ export default function Home() {
       </Box>
 
       <Box
-        id="services"
+      id="our-specialty" component="section"
         sx={{ background: theme.palette.background.default, py: 7 }}
       >
         <Container
@@ -1096,7 +1097,7 @@ export default function Home() {
             <Grid item xs={4} sm={4} md={3} lg={2} className="tech_logos">
               <img
                 loading="lazy"
-                src="/Healthcare.svg"
+                src="/fintech.svg"
                 alt=""
                 style={{ display: "block", margin: "auto", transition: ".2s" }}
                 className="zoom_effect_icon"
@@ -1116,7 +1117,7 @@ export default function Home() {
             <Grid item xs={4} sm={4} md={3} lg={2} className="tech_logos">
               <img
                 loading="lazy"
-                src="/Healthcare.svg"
+                src="/pos.svg"
                 alt=""
                 style={{ display: "block", margin: "auto", transition: ".2s" }}
                 className="zoom_effect_icon"
@@ -1257,7 +1258,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box sx={{ py: 7 }}>
+      <Box sx={{ py: 7 }}  id="technologies" component="section">
         <Container
           maxWidth="lg"
           sx={{
@@ -2607,7 +2608,7 @@ export default function Home() {
       </Box>
 
       <Box
-        id="services"
+       id="portfolio" component="section"
         sx={{ background: theme.palette.background.default, py: 7 }}
       >
         <Container

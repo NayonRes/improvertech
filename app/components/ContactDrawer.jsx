@@ -239,9 +239,9 @@ const ContactDrawer = () => {
               Email address
             </Typography>
             <Typography
-              sx={{ color: "#fff", fontWeight: 500, fontSize: "20px" }}
+              sx={{ color: "#fff", fontWeight: 500, fontSize: "16px" }}
             >
-              info@imporvertech.com
+              info.improvertech@gmail.com
             </Typography>
           </Grid>
         </Grid>

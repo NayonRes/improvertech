@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Button, Container, Grid } from "@mui/material";
 import Link from "next/link";
 import MobileDrawer from "./MobileDrawer";
@@ -10,9 +10,12 @@ import ContactDrawer from "./ContactDrawer";
 
 const Header = () => {
   const pathname = usePathname();
-  console.log(pathname, pathname);
+  console.log("pathname", pathname);
 
   const [open, setOpen] = React.useState(false);
+  const [index, setIndex] = React.useState(0);
+  const [active, setActive] = useState("home");
+  const [reload, setReload] = useState(0);
 
   const buttonStyle = {
     textTransform: "none",
@@ -46,7 +49,7 @@ const Header = () => {
     //   width: "30%",
     // },
   };
-  const active = {
+  const activeStyle = {
     color: "#00ffa3",
     // "&::before": {
     //   content: '""',
@@ -65,6 +68,88 @@ const Header = () => {
     return pathname.includes("/portfolio");
     // /projects/
   };
+
+  const fnActive = (id) => {
+    console.log("id", id);
+
+    // setActive(id);
+    // var elmntToView1 = document.getElementById("menu");
+    // elmntToView1.scrollIntoView({
+    //   behavior: "smooth",
+    // });
+
+    const yOffset = -70;
+    const element = document.getElementById(id);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+    if (id === "Contact") {
+      setTimeout(() => {
+        setActive(id);
+      }, 1500);
+    }
+  };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    let lastId = active;
+    document.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY;
+      // console.log("scrollCheck", scrollCheck);
+      let sectionId;
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 70;
+        // console.log("sectionTop", sectionTop, sectionTop-50);
+
+        const sectionHeight = section.clientHeight;
+        const sectionBottom = sectionTop + sectionHeight;
+        if (scrollCheck >= sectionTop && scrollCheck <= sectionBottom) {
+          sectionId = section.getAttribute("id");
+          if (lastId !== sectionId) {
+            lastId = sectionId;
+            setActive(sectionId);
+            // console.log("sectionId", sectionId);
+          }
+        }
+      });
+    });
+
+    // console.log("body", window.screen.availHeight);
+  }, []);
+  useEffect(() => {
+    setReload(reload + 1);
+
+    // ==================================================
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      const navbarPosition = document.getElementById("navbar");
+      let y = navbarPosition.offsetTop;
+      if (y < 80) {
+        navbarPosition.style.background = "rgba(0,0,0,0)";
+        navbarPosition.style.backdropFilter = "blur(0px)";
+        // box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+      } else if (y > 80) {
+        navbarPosition.style.background = "rgba(247, 249, 249, 0.5)";
+        navbarPosition.style.backdropFilter = "blur(40px)";
+      }
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-80px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }, []);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
 
   return (
     <Container maxWidth="xl" sx={{ py: 1 }}>
@@ -113,12 +198,25 @@ const Header = () => {
               },
             }}
           >
-            {/* <Button
+            <Button
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(pathname === "/" ? active : {}),
+                ...(active === "home" ? activeStyle : {}),
               }}
+              onClick={() => fnActive("home")}
+              // component={Link}
+              // href="/"
+            >
+              Home
+            </Button>
+            <Button
+              disableRipple
+              sx={{
+                ...buttonStyle,
+                ...(active === "services" ? activeStyle : {}),
+              }}
+              onClick={() => fnActive("services")}
               // component={Link}
               // href="/"
             >
@@ -128,8 +226,9 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(activeProjects() ? active : {}),
+                ...(active === "about" ? activeStyle : {}),
               }}
+              onClick={() => fnActive("about")}
               // component={Link}
               // href="/portfolio"
             >
@@ -139,29 +238,43 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(activeProjects() ? active : {}),
+                ...(active === "our-specialty" ? activeStyle : {}),
               }}
+              onClick={() => fnActive("our-specialty")}
               // component={Link}
               // href="/portfolio"
             >
-              How We Work
+              Our Specialty
             </Button>
             <Button
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(activeProjects() ? active : {}),
+                ...(active === "technologies" ? activeStyle : {}),
               }}
+              onClick={() => fnActive("technologies")}
+              // component={Link}
+              // href="/portfolio"
+            >
+              Our Technologies
+            </Button>
+            <Button
+              disableRipple
+              sx={{
+                ...buttonStyle,
+                ...(active === "portfolio" ? activeStyle : {}),
+              }}
+              onClick={() => fnActive("portfolio")}
               // component={Link}
               // href="/portfolio"
             >
               Portfolio
             </Button>
-            <Button
+            {/* <Button
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(activeProjects() ? active : {}),
+                ...(activeProjects() ? activeStyle : {}),
               }}
               // component={Link}
               // href="/portfolio"
@@ -172,7 +285,7 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(activeProjects() ? active : {}),
+                ...(activeProjects() ? activeStyle : {}),
               }}
               // component={Link}
               // href="/portfolio"
@@ -183,7 +296,7 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(pathname === "/contacts" ? active : {}),
+                ...(pathname === "/contacts" ? activeStyle : {}),
               }}
               component={Link}
               href="/contacts"
@@ -195,7 +308,7 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(pathname === "/categories" ? active : {}),
+                ...(pathname === "/categories" ? activeStyle : {}),
               }}
               component={Link}
               href="/categories"
@@ -206,7 +319,7 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(pathname === "/about-us" ? active : {}),
+                ...(pathname === "/about-us" ? activeStyle : {}),
               }}
               // component={Link}
               // href="/about-us"
@@ -217,7 +330,7 @@ const Header = () => {
               disableRipple
               sx={{
                 ...buttonStyle,
-                ...(pathname === "/contacts" ? active : {}),
+                ...(pathname === "/contacts" ? activeStyle : {}),
               }}
               component={Link}
               href="/contacts"

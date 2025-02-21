@@ -44,7 +44,7 @@ const Footer = () => {
               Want to collaborate?
             </Typography>
             <Typography
-              variant="h5"
+              variant="h6"
               sx={{
                 color: "#00ffa3",
                 fontWeight: 500,
@@ -54,10 +54,10 @@ const Footer = () => {
               // href="/"
             >
               <a
-                href="mailto:info.improvertech.com"
+                href="mailto:info.improvertech@gmail.com"
                 style={{ textDecoration: "none", color: "#00ffa3" }}
               >
-                info.improvertech.com{" "}
+                info.improvertech@gmail.com{" "}
               </a>
             </Typography>
           </Grid>
@@ -72,7 +72,7 @@ const Footer = () => {
               Want to join us?
             </Typography>
             <Typography
-              variant="h5"
+              variant="h6"
               sx={{
                 color: "#00ffa3",
                 fontWeight: 500,
@@ -82,10 +82,10 @@ const Footer = () => {
               // href="/"
             >
               <a
-                href="mailto:info.improvertech.com"
+                href="mailto:info.improvertech@gmail.com"
                 style={{ textDecoration: "none", color: "#00ffa3" }}
               >
-                info.improvertech.com{" "}
+                info.improvertech@gmail.com{" "}
               </a>
             </Typography>
           </Grid>
@@ -140,12 +140,16 @@ const Footer = () => {
             </Box>
 
             <Typography variant="base" sx={{ my: 3.5, color: "#F6F6F6" }}>
-              Eta edit kore dao: Empowering innovation <br />
+              Empowering innovation <br />
               through software excellence.
             </Typography>
 
             <Box>
-              <a className="no_link_design" href="#">
+              <a
+                target="_blank"
+                className="no_link_design"
+                href="https://www.facebook.com/share/14twipJ9FJ/?mibextid=wwXIfr"
+              >
                 <svg
                   width="20"
                   height="21"
@@ -301,7 +305,7 @@ const Footer = () => {
             >
               USA office
             </Typography>
-            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <PersonIcon sx={{ color: "#F6F6F6" }} />
               </Grid>
@@ -313,7 +317,7 @@ const Footer = () => {
                   Shihabur Rahman
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid> */}
             <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
@@ -342,7 +346,7 @@ const Footer = () => {
                 </Typography>
               </Grid>
             </Grid>
-            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
                   width="20"
@@ -364,13 +368,13 @@ const Footer = () => {
                 >
                   <a
                     className="no_link_design"
-                    href="mailto:chitroninterior@gmail.com"
+                    href="mailto:info.improvertech@gmail.com"
                   >
-                    chitroninterior@gmail.com
+                    info.improvertech@gmail.com
                   </a>
                 </Typography>
               </Grid>
-            </Grid> */}
+            </Grid>
             <Grid container alignItems="center">
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
@@ -409,7 +413,7 @@ const Footer = () => {
             >
               Bangladesh office
             </Typography>
-            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <PersonIcon sx={{ color: "#F6F6F6" }} />
               </Grid>
@@ -421,7 +425,7 @@ const Footer = () => {
                   Jamil Hasnine
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid> */}
             <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
@@ -449,7 +453,7 @@ const Footer = () => {
                 </Typography>
               </Grid>
             </Grid>
-            {/* <Grid container alignItems="center" sx={{ mb: 3.125 }}>
+            <Grid container alignItems="center" sx={{ mb: 3.125 }}>
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
                   width="20"
@@ -471,13 +475,13 @@ const Footer = () => {
                 >
                   <a
                     className="no_link_design"
-                    href="mailto:chitroninterior@gmail.com"
+                    href="mailto:info.improvertech@gmail.com"
                   >
-                    chitroninterior@gmail.com
+                    info.improvertech@gmail.com
                   </a>
                 </Typography>
               </Grid>
-            </Grid> */}
+            </Grid>
             <Grid container alignItems="center">
               <Grid item xs="auto" sx={{ pr: 3 }}>
                 <svg
