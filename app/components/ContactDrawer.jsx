@@ -83,31 +83,47 @@ const ContactDrawer = () => {
         //   },
         // }}
       >
-        {/* <div style={{ position: "relative", padding: "3px 15px 0px" }}>
-          <Link href="/">
-            <img src="/Logo.svg" alt="chitron logo" style={{ width: "30px" }} />
-          </Link>
+        {/* <div style={{ position: "relative" }}>
+           <Link href="/">
+            <img
+              src="/Logo.png"
+              alt="iprovertech logo"
+              style={{ width: "130px" }}
+            />
+          </Link>  
           <IconButton
             id="closeButton"
             onClick={toggleDrawer(anchor, false)}
-            style={{ position: "absolute", right: 7, top: 3 }}
+            style={{ position: "absolute", right: 7, top: -30 }}
           >
-            <ArrowForwardIosIcon />
+            <ArrowForwardIosIcon sx={{ color: "#fff" }} />
           </IconButton>
-
-        
-        </div>
-        <Divider /> */}
+        </div> */}
+        {/* <Divider /> */}
         <Box>
           <Typography
-            variant="h4"
+            variant="h5"
             color="#fff"
             sx={{
               color: "#fff",
               mb: 3,
+              position: "relative",
             }}
+            onClick={toggleDrawer(anchor, false)}
           >
             What are you waiting for?
+            <IconButton
+              id="closeButton"
+              onClick={toggleDrawer(anchor, false)}
+              sx={{
+                position: "absolute",
+                right: -30,
+                top: 0,
+                display: { xs: "block", sm: "none" },
+              }}
+            >
+              <ArrowForwardIosIcon sx={{ color: "#fff" }} />
+            </IconButton>
           </Typography>
 
           <Typography
@@ -736,14 +752,19 @@ const ContactDrawer = () => {
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-          <span
+          <Box
             variant="contained"
             disableElevation
             // color="#25316d"
             aria-label="open drawer"
             edge="start"
             color="primary"
-            style={{ cursor: "pointer" }}
+            sx={{
+              cursor: "pointer",
+
+              position: "relative",
+              left: { xs: "40px", sm: 0 },
+            }}
             // sx={{
             //   padding: "9px 9px !important",
             //   minWidth: "0px !important",
@@ -751,8 +772,7 @@ const ContactDrawer = () => {
             onClick={toggleDrawer(anchor, true)}
           >
             <svg
-              width="89"
-              height="72"
+              className="letsTalkIcon"
               viewBox="0 0 89 72"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -766,7 +786,7 @@ const ContactDrawer = () => {
                 fill="#121316"
               />
             </svg>
-          </span>
+          </Box>
 
           <Drawer
             sx={{
@@ -797,8 +817,7 @@ const ContactDrawer = () => {
               onClick={toggleDrawer(anchor, false)}
             >
               <svg
-                width="89"
-                height="72"
+                className="letsTalkIcon"
                 viewBox="0 0 89 72"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

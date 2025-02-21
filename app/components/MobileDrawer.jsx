@@ -23,7 +23,7 @@ import Link from "next/link";
 // import { useLocation, useNavigate } from "react-router-dom";
 // import "../App.css";
 // import "./Header.css";
-const MobileDrawer = () => {
+const MobileDrawer = ({ fnActive, active }) => {
   // const location = useLocation();
   const pathname = usePathname();
   const router = useRouter();
@@ -97,10 +97,18 @@ const MobileDrawer = () => {
         <ListItem disablePadding>
           <ListItemButton
             onClick={() => {
-              handleChange("/");
+              // handleChange("/");
+              fnActive("home");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: pathname === "/" ? "#f3f3f3" : "" }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "home" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "home" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
           >
             <ListItemIcon>
               {/* <img src="/images/home.svg" alt="Home icon" /> */}
@@ -123,10 +131,155 @@ const MobileDrawer = () => {
         <ListItem disablePadding>
           <ListItemButton
             onClick={() => {
-              handleChange("portfolio");
+              // handleChange("/");
+              fnActive("services");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: pathname === "/portfolio" ? "#f3f3f3" : "" }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "services" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "services" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
+          >
+            <ListItemIcon>
+              {/* <img src="/images/home.svg" alt="Home icon" /> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"
+                  fill="#8d8f98"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary="Services" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              // handleChange("/");
+              fnActive("about");
+              document.getElementById("closeButton").click();
+            }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "about" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "about" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
+          >
+            <ListItemIcon>
+              {/* <img src="/images/home.svg" alt="Home icon" /> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Layer_1"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="m11.5,6.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5-1.119,2.5-2.5,2.5-2.5-1.119-2.5-2.5Zm-1.596,7.355c.472.287,1.088.136,1.374-.336.559-.922,1.627-1.519,2.722-1.519s2.163.596,2.722,1.519c.188.31.519.481.856.481.177,0,.355-.047.518-.145.472-.286.623-.901.337-1.374-.929-1.531-2.627-2.481-4.433-2.481s-3.504.951-4.433,2.481c-.286.473-.135,1.087.337,1.374Zm12.096-8.855v14c0,2.757-2.243,5-5,5H6c-2.206,0-4-1.794-4-4V5C2,2.243,4.243,0,7,0h10C19.757,0,22,2.243,22,5Zm-5-3h-9v14h12V5c0-1.654-1.346-3-3-3Zm-13,3v11.556c.591-.344,1.268-.556,2-.556V2.184c-1.161.414-2,1.514-2,2.816Zm16,14v-1H6c-1.103,0-2,.897-2,2s.897,2,2,2h11c1.654,0,3-1.346,3-3Z"
+                  fill="#8d8f98"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary="About Us" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              // handleChange("/");
+              fnActive("our-specialty");
+              document.getElementById("closeButton").click();
+            }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "our-specialty" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "our-specialty" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
+          >
+            <ListItemIcon>
+              {/* <img src="/images/home.svg" alt="Home icon" /> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"
+                  fill="#8d8f98"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary=" Our Specialty" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              // handleChange("technologies");
+              fnActive("technologies");
+              document.getElementById("closeButton").click();
+            }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "technologies" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "technologies" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
+          >
+            <ListItemIcon>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Layer_1"
+                data-name="Layer 1"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m23,16V7c0-2.757-2.243-5-5-5H6C3.243,2,1,4.243,1,7v9c-.553,0-1,.447-1,1s.447,1,1,1h.051c.252,2.244,2.139,4,4.449,4h13c2.31,0,4.197-1.756,4.449-4h.051c.553,0,1-.447,1-1s-.447-1-1-1Zm-2-9v9h-3V7c0-1.13-.391-2.162-1.026-3h1.026c1.654,0,3,1.346,3,3Zm-15-3h7c1.654,0,3,1.346,3,3v9H3V7c0-1.654,1.346-3,3-3Zm12.5,16H5.5c-1.208,0-2.217-.86-2.449-2h17.899c-.232,1.14-1.242,2-2.449,2Z"
+                  fill="#8d8f98"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary="Our Technologies" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              // handleChange("portfolio");
+              fnActive("portfolio");
+              document.getElementById("closeButton").click();
+            }}
+            sx={{
+              "& .MuiTypography-root": {
+                color: active === "portfolio" ? "#00ffa3" : "",
+              },
+              "& svg path": {
+                fill: active === "portfolio" ? "#00ffa3" : "#8d8f98",
+              },
+            }}
           >
             <ListItemIcon>
               <svg
@@ -152,7 +305,7 @@ const MobileDrawer = () => {
               handleChange("categories");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: pathname === "/categories" ? "#f3f3f3" : "" }}
+            style={{ background: pathname === "/categories" ? "#00ffa3" : "" }}
           >
             <ListItemIcon>
               <svg
@@ -184,13 +337,13 @@ const MobileDrawer = () => {
             <ListItemText primary="Categories" />
           </ListItemButton>
         </ListItem> */}
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
           <ListItemButton
             onClick={() => {
               handleChange("/about-us");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: pathname === "/about-us" ? "#f3f3f3" : "" }}
+            style={{ background: pathname === "/about-us" ? "#00ffa3" : "" }}
           >
             <ListItemIcon>
               <svg
@@ -216,7 +369,7 @@ const MobileDrawer = () => {
               handleChange("/contacts");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: pathname === "/contacts" ? "#f3f3f3" : "" }}
+            style={{ background: pathname === "/contacts" ? "#00ffa3" : "" }}
           >
             <ListItemIcon>
               <svg
@@ -235,7 +388,7 @@ const MobileDrawer = () => {
             </ListItemIcon>
             <ListItemText primary="Contacts" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
       </List>
     </Box>
   );
@@ -253,7 +406,6 @@ const MobileDrawer = () => {
             edge="start"
             color="primary"
             sx={{
-              display: { md: "none" },
               padding: "9px 9px !important",
               minWidth: "0px !important",
             }}

@@ -44,7 +44,7 @@ const Footer = () => {
               Want to collaborate?
             </Typography>
             <Typography
-              variant="h6"
+              variant="base"
               sx={{
                 color: "#00ffa3",
                 fontWeight: 500,
@@ -72,7 +72,7 @@ const Footer = () => {
               Want to join us?
             </Typography>
             <Typography
-              variant="h6"
+              variant="base"
               sx={{
                 color: "#00ffa3",
                 fontWeight: 500,

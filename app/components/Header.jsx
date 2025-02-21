@@ -99,7 +99,7 @@ const Header = () => {
       // console.log("scrollCheck", scrollCheck);
       let sectionId;
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 70;
+        const sectionTop = section.offsetTop - 170;
         // console.log("sectionTop", sectionTop, sectionTop-50);
 
         const sectionHeight = section.clientHeight;
@@ -117,31 +117,30 @@ const Header = () => {
 
     // console.log("body", window.screen.availHeight);
   }, []);
-  useEffect(() => {
-    setReload(reload + 1);
+  // useEffect(() => {
+  //   setReload(reload + 1);
 
-    // ==================================================
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      const navbarPosition = document.getElementById("navbar");
-      let y = navbarPosition.offsetTop;
-      if (y < 80) {
-        navbarPosition.style.background = "rgba(0,0,0,0)";
-        navbarPosition.style.backdropFilter = "blur(0px)";
-        // box-shadow: 0 10px 15px rgba(25,25,25,0.1);
-      } else if (y > 80) {
-        navbarPosition.style.background = "rgba(247, 249, 249, 0.5)";
-        navbarPosition.style.backdropFilter = "blur(40px)";
-      }
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-80px";
-      }
-      prevScrollpos = currentScrollPos;
-    };
-  }, []);
+  //   var prevScrollpos = window.pageYOffset;
+  //   window.onscroll = function () {
+  //     const navbarPosition = document.getElementById("navbar");
+  //     let y = navbarPosition.offsetTop;
+  //     if (y < 80) {
+  //       navbarPosition.style.background = "rgba(0,0,0,0)";
+  //       navbarPosition.style.backdropFilter = "blur(0px)";
+  //       // box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+  //     } else if (y > 80) {
+  //       navbarPosition.style.background = "rgba(247, 249, 249, 0.5)";
+  //       navbarPosition.style.backdropFilter = "blur(40px)";
+  //     }
+  //     var currentScrollPos = window.pageYOffset;
+  //     if (prevScrollpos > currentScrollPos) {
+  //       document.getElementById("navbar").style.top = "0";
+  //     } else {
+  //       document.getElementById("navbar").style.top = "-80px";
+  //     }
+  //     prevScrollpos = currentScrollPos;
+  //   };
+  // }, []);
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -179,20 +178,25 @@ const Header = () => {
               display: {
                 xs: "block",
                 sm: "block",
-                md: "none",
+                md: "block",
                 lg: "none",
                 xl: "none",
               },
             }}
           >
-            <MobileDrawer open={open} setOpen={setOpen} />
+            <MobileDrawer
+              open={open}
+              setOpen={setOpen}
+              fnActive={fnActive}
+              active={active}
+            />
           </Box>
           <Box
             sx={{
               display: {
                 xs: "none",
                 sm: "none",
-                md: "block",
+                md: "none",
                 lg: "block",
                 xl: "block",
               },
@@ -232,7 +236,7 @@ const Header = () => {
               // component={Link}
               // href="/portfolio"
             >
-              About
+              About US
             </Button>
             <Button
               disableRipple
@@ -270,73 +274,6 @@ const Header = () => {
             >
               Portfolio
             </Button>
-            {/* <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(activeProjects() ? activeStyle : {}),
-              }}
-              // component={Link}
-              // href="/portfolio"
-            >
-              Careers
-            </Button>
-            <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(activeProjects() ? activeStyle : {}),
-              }}
-              // component={Link}
-              // href="/portfolio"
-            >
-              Blog
-            </Button>
-            <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(pathname === "/contacts" ? activeStyle : {}),
-              }}
-              component={Link}
-              href="/contacts"
-            >
-              Contact
-            </Button> */}
-
-            {/* <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(pathname === "/categories" ? activeStyle : {}),
-              }}
-              component={Link}
-              href="/categories"
-            >
-              Categories
-            </Button> */}
-            {/* <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(pathname === "/about-us" ? activeStyle : {}),
-              }}
-              // component={Link}
-              // href="/about-us"
-            >
-              About us
-            </Button> */}
-            {/* <Button
-              disableRipple
-              sx={{
-                ...buttonStyle,
-                ...(pathname === "/contacts" ? activeStyle : {}),
-              }}
-              component={Link}
-              href="/contacts"
-            >
-              Contacts
-            </Button> */}
           </Box>
         </Grid>
         <Grid
@@ -346,7 +283,7 @@ const Header = () => {
             display: {
               xs: "none",
               sm: "none",
-              md: "block",
+              md: "none",
               lg: "block",
               xl: "block",
             },
