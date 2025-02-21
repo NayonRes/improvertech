@@ -166,7 +166,7 @@ export default function Home() {
                 color: "#fff",
                 mb: 3,
 
-                px: { xs: 4, sm: 0 },
+                px: { xs: 4, sm: 0, xs: 0 },
               }}
             >
               Empowering Innovation Through
@@ -180,13 +180,13 @@ export default function Home() {
                 textAlign: "center",
                 fontWeight: 400,
                 mb: { xs: 4, sm: 4, md: 4, lg: 5, xl: 5 },
-                px: { xs: 4, sm: 0 },
+                px: { xs: 4, sm: 0, xs: 0 },
               }}
             >
               Transforming Ideas into Seamless Web and Software Solutions for an
               <br /> Exceptional Cross-Platform Experience.
             </Typography>
-            <Box sx={{ textAlign: "center" }}>
+            {/* <Box sx={{ textAlign: "center" }}>
               <Button
                 size="small"
                 variant="contained"
@@ -204,7 +204,7 @@ export default function Home() {
                 Our Services&nbsp;&nbsp;{" "}
                 <EastIcon sx={{ fontSize: "18px", color: "#121316" }} />
               </Button>
-            </Box>
+            </Box> */}
           </Box>
         </Grid>
       </Container>
@@ -255,8 +255,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+              maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >
@@ -984,8 +990,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+              maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >
@@ -1233,8 +1245,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+              maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >
@@ -1541,8 +1559,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+              maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >
@@ -2890,8 +2914,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+              maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >
@@ -2905,7 +2935,7 @@ export default function Home() {
             style={{ margin: "auto", display: "block" }}
           />
         </Container>
-        <Box sx={{ mt: 8, maxWidth: "1920px", px: 12 }}>
+        <Box sx={{ mt: 8 }}>
           <ProjectsSlider />
         </Box>
       </Box>
@@ -2955,8 +2985,14 @@ export default function Home() {
               textAlign: "center",
               fontWeight: 400,
               mb: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
-              px: { xs: 4, sm: 0 },
-              maxWidth: "70%",
+              px: { xs: 4, sm: 0, xs: 0 },
+               maxWidth: {
+                xs: "100%",
+                sm: "70%",
+                md: "70%",
+                lg: "70%",
+                xl: "70%",
+              },
               margin: "auto",
             }}
           >

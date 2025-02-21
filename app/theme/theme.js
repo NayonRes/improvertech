@@ -110,9 +110,10 @@ const theme = createTheme({
         lineHeight: "3.25rem", // 68pxv
       },
       [createTheme().breakpoints.down("sm")]: {
-        fontSize: "1.75rem", //28px
-        lineHeight: "3.25rem", // 52px
+        fontSize: "1.5rem", //24px
+        lineHeight: "2rem", // 32px
       },
+    
     },
     h3: {
       fontSize: "2.625rem", //42px
