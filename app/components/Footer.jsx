@@ -62,7 +62,7 @@ const Footer = () => {
             </Typography>
           </Grid>
           <Grid item md={4}>
-            <Typography
+            {/* <Typography
               variant="small"
               sx={{
                 color: "#8d8f98",
@@ -87,7 +87,7 @@ const Footer = () => {
               >
                 info.improvertech@gmail.com{" "}
               </a>
-            </Typography>
+            </Typography> */}
           </Grid>
           <Grid item md={4}>
             <Typography

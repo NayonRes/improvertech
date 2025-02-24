@@ -132,6 +132,27 @@ export default function Home() {
   //     });
   //   }
   // }, []);
+  const fnActive = (id) => {
+    console.log("id", id);
+
+    // setActive(id);
+    // var elmntToView1 = document.getElementById("menu");
+    // elmntToView1.scrollIntoView({
+    //   behavior: "smooth",
+    // });
+
+    const yOffset = -70;
+    const element = document.getElementById(id);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+    // if (id === "Contact") {
+    //   setTimeout(() => {
+    //     setActive(id);
+    //   }, 1500);
+    // }
+  };
   return (
     <>
       {/* <Box id="hero_section" SX={{ maxWidth: "1920px" }}>
@@ -186,25 +207,44 @@ export default function Home() {
               Transforming Ideas into Seamless Web and Software Solutions for an
               <br /> Exceptional Cross-Platform Experience.
             </Typography>
-            {/* <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: "center" }}>
               <Button
                 size="small"
                 variant="contained"
                 color="primary"
                 disableElevation
                 sx={{
-                  ml: 2,
-                  px: 4,
-                  py: 1.25,
-                  fontSize: "15px",
+                  px: { xs: 3, sm: 4, md: 4, lg: 4, xl: 4 },
+                  py: { xs: 0.75, sm: 1.25, md: 1.25, lg: 1.25, xl: 1.25 },
+                  fontSize: {
+                    xs: "13px",
+                    sm: "15px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "15px",
+                  },
                   fontWeight: "600 !important",
                   color: "#121316",
                 }}
+                onClick={() => {
+                  fnActive("services");
+                }}
               >
                 Our Services&nbsp;&nbsp;{" "}
-                <EastIcon sx={{ fontSize: "18px", color: "#121316" }} />
+                <EastIcon
+                  sx={{
+                    fontSize: {
+                      xs: "13px",
+                      sm: "18px",
+                      md: "18px",
+                      lg: "18px",
+                      xl: "18px",
+                    },
+                    color: "#121316",
+                  }}
+                />
               </Button>
-            </Box> */}
+            </Box>
           </Box>
         </Grid>
       </Container>
